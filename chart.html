@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Chart with Watchlist</title>
+    <style>
+        /* 这里的 CSS 非常重要，它确保图表能自动适应 Notion 区块的大小 */
+        body, html { margin: 0; padding: 0; height: 100%; width: 100%; overflow: hidden; }
+    </style>
+</head>
+<body>
+
+<div class="tradingview-widget-container" style="height:100%;width:100%">
+  <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:100%"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/NASDAQ-AAPL/" rel="noopener nofollow" target="_blank"><span class="blue-text">AAPL stock chart</span></a><span class="trademark"> by TradingView</span></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+  {
+  "allow_symbol_change": true,
+  "calendar": false,
+  "details": false,
+  "hide_side_toolbar": true,
+  "hide_top_toolbar": false,
+  "hide_legend": false,
+  "hide_volume": false,
+  "hotlist": false,
+  "interval": "D",
+  "locale": "en",
+  "save_image": true,
+  "style": "1",
+  "symbol": "NASDAQ:AAPL",
+  "theme": "light",
+  "timezone": "America/New_York",
+  "backgroundColor": "#ffffff",
+  "gridColor": "rgba(46, 46, 46, 0.06)",
+  "watchlist": [
+    "NASDAQ:AFRM",
+    "NYSE:HIMS",
+    "NASDAQ:DUOL",
+    "NASDAQ:ALAB",
+    "NYSE:RDDT",
+    "NYSE:TOST",
+    "NASDAQ:NBIS",
+    "NYSE:RBRK",
+    "NASDAQ:SOFI",
+    "NYSE:KLAR",
+    "NYSE:ZETA",
+    "NYSE:OSCR",
+    "NASDAQ:NUTX",
+    "NASDAQ:CRWV",
+    "NASDAQ:SMCI",
+    "NASDAQ:APP"
+  ],
+  "withdateranges": false,
+  "compareSymbols": [],
+  "studies": [
+    "STD;Divergence%1Indicator",
+    "STD;SMA",
+    "STD;MACD"
+  ],
+  "autosize": true
+}
+  </script>
+</div>
+
+</body>
+</html>
